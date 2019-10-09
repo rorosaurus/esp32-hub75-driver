@@ -1,5 +1,7 @@
 # Use a ESP32-DEVKIT-V1 to drive HUB75 LED panels using SmartMatrix library
 
+Inspired by [Adafruit's RGB Matrix Featherwing Kit](https://www.adafruit.com/product/3036)! But cheaper and more powerful, with Wifi/BT!
+
 ## Features
 * Connects all necessary pins to drive HUB75 panels using `ESP32_FORUM_PINOUT` from [MatrixHardware_ESP32_V0.h](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h)
 * 2x screw terminals to allow you to share 5V from the microUSB to your panels.
