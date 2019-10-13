@@ -31,11 +31,12 @@ Inspired by [Adafruit's RGB Matrix Featherwing Kit](https://www.adafruit.com/pro
 
 ## Software
 I would recommend using the following software with this board:
-* https://github.com/espressif/arduino-esp32 - To program ESP32 boards using Arduino
-* https://github.com/pixelmatix/SmartMatrix/tree/teensylc - The library that helps you talk to the LED panel
-* https://github.com/marcmerlin/AnimatedGIFs - Marc worked hard to make it relatively simple to use SmartMatrix to output animated .gifs
-* https://github.com/me-no-dev/arduino-esp32fs-plugin - This plugin makes it simple to upload .gifs to your ESP32
-* Use your preferred image editor to make your animated .gifs!
+* https://www.arduino.cc/en/Main/Software - The Arduino IDE, to program everything!
+* https://github.com/espressif/arduino-esp32 - Install board manager support for ESP32
+* https://github.com/pixelmatix/SmartMatrix/tree/teensylc - Install this library (by copying to `My Documents/Arduino/libraries`. This library is what ultimately talks to the LED panel.
+* https://github.com/marcmerlin/AnimatedGIFs - This program uses the above software and libraries to playback animated .gifs for you! You can easily adjust things like the time between switching .gifs.
+* https://github.com/me-no-dev/arduino-esp32fs-plugin - This Arduino IDE plugin makes it simple to upload .gifs to your ESP32
+* Use your preferred image editor to make your animated .gifs! I used Photoshop, but you could also use GIMP or something!
 
 ## Design
 Gerber file download: [/gerber/esp32-hub75-driver.zip](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver.zip)
