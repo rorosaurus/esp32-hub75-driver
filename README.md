@@ -46,3 +46,10 @@ I would recommend using the following software with this board:
 ## Design
 Gerber file download: [/gerber/esp32-hub75-driver.zip](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver.zip)
 ![](gerber/esp32-hub75-driver.png)
+
+## Other hardware you might want
+* Project Mc2 LED Purse (harvest a cheap 16x32px LED display): [Amazon](https://smile.amazon.com/dp/B071LQR2QG/), [Adafruit article](https://blog.adafruit.com/2019/03/06/issue-16-hackspace-magazine-can-i-hack-it-a-smart-pixel-purse-neopixels-making-hackspacemag-biglesp/)
+  * If you want to daisy-chain this display, it's missing an output socket:
+    * SMT 2x8 Male IDC Socket: [AliExpress](https://www.aliexpress.com/item/32989866598.html)
+* If you want to daisy-chain other displays, your order usually includes a cable. If you need more cables:
+  * 16P IDC Cable: [AliExpress](https://www.aliexpress.com/item/32873766356.html)
