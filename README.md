@@ -9,7 +9,7 @@ Inspired by [Adafruit's RGB Matrix Featherwing Kit](https://www.adafruit.com/pro
 * Optional room for 1x Electrolytic Capacitor (I use a 16V 1000uF) to smooth the 5V power
 * 2x4 pins for additional GPIO use: 
   * 2x GND
-  * 2x 3.3V
+  * 2x 3.3V (The devkit's LDO supplies up to 1A total.  ESP-WROOM-32 module uses 1A max but Espressif recommends assuming 0.5A.)
   * 4x GPIO with ADC functionality (for buttons, potentiometers, etc.)
 * Only one 16 pin IDC output, but this should support multiple HUB75 panels daisy-chained in series
 
