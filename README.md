@@ -16,7 +16,11 @@ Inspired by [Adafruit's RGB Matrix Featherwing Kit](https://www.adafruit.com/pro
 ## Hardware
 * Required:
   * ESP32-DEVKIT-V1: [Amazon ($7)](https://smile.amazon.com/gp/product/B07Q576VWZ/), [AliExpress ($4)](https://www.aliexpress.com/item/32902307791.html)
-  * Female Pin Header 2X8 (connects this driver to the HUB75 panel): [Amazon](https://smile.amazon.com/gp/product/B07VJ3JCLT/), [AliExpress](https://www.aliexpress.com/item/32747224548.html)
+  * If you want this PCB to plug directly into the panel:
+    * Female Pin Header 2X8 (connects this driver to the HUB75 panel): [Amazon](https://smile.amazon.com/gp/product/B07VJ3JCLT/), [AliExpress](https://www.aliexpress.com/item/32747224548.html)
+  * If you want this PCB to plug into your panel via a IDC ribbon cable (cable usually included with your panel):
+    * 16P IDC Socket: [Amazon](https://smile.amazon.com/gp/product/B010V43ACO/), [AliExpress](https://www.aliexpress.com/item/32841491526.html)
+    * 16P IDC Cable: [AliExpress](https://www.aliexpress.com/item/32873766356.html)
   * Any HUB75 type scan LED panel (E pin is connected, so should work with 1/32 panels too)
 * Optional:
   * If you want easy disconnect for ESP32:
