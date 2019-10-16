@@ -24,7 +24,6 @@ Inspired by [Adafruit's RGB Matrix Featherwing Kit](https://www.adafruit.com/pro
   * 16P IDC Cable (might have come with your panel): [AliExpress](https://www.aliexpress.com/item/32873766356.html)
 * Any HUB75 type scan LED panel (E pin is connected, so should work with 1/32 panels too)
 
-
 ### Optional:
 * If you want easy disconnect for ESP32:
   * 15 Pin Single Row Female Pin Header (buy 2): [AliExpress](https://www.aliexpress.com/item/32962790286.html)
