@@ -6,7 +6,7 @@ This shield only works with [SmartMatrix](https://github.com/pixelmatix/SmartMat
 
 If you want to work with PxMatrix, I highly recommend checking out [Brian Lough's shields](https://www.tindie.com/stores/brianlough/)! They are designed much better than mine!
 
-I simply prefer SmartMatrix, which is why I designed this shield. There are [some shields in the SmartMatrix repo](https://github.com/pixelmatix/SmartMatrix/tree/teensylc/extras/hardware) but these appear to be active and require extra components. My shield is passive and just connects the pins to the right place. It lacks a proper level-shifter, so it assumes your panel will accept the 3.3V logic from the ESP32. It lacks an external latch, which eats up a few more pins from your ESP32.
+I simply prefer SmartMatrix, which is why I designed this shield. There are [some shields in the SmartMatrix repo](https://github.com/pixelmatix/SmartMatrix/tree/teensylc/extras/hardware) but these appear to be active and require extra components. My shield is passive and just connects the pins to the right place. It lacks a proper level-shifter, so it assumes your panel will accept the 3.3V logic from the ESP32. It also lacks an external latch, which those active shields use to free up a few more pins on your ESP32.
 
 ## Features
 * Connects all necessary pins to drive HUB75 panels using `ESP32_FORUM_PINOUT` from [MatrixHardware_ESP32_V0.h](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h)
