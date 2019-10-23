@@ -9,8 +9,6 @@ If you want to work with PxMatrix, I highly recommend checking out [Brian Lough'
 I simply prefer SmartMatrix, which is why I designed this shield. There are [some shields in the SmartMatrix repo](https://github.com/pixelmatix/SmartMatrix/tree/teensylc/extras/hardware) but these appear to be active and require extra components. My shield is passive and just connects the pins to the right place. It lacks a proper level-shifter, so it assumes your panel will accept the 3.3V logic from the ESP32. It also lacks an external latch, which those active shields use to free up a few more pins on your ESP32.
 
 ## Demo
-![PCB front](PCB-front.jpg) ![PCB back](PCB-back.jpg)
-
 ![PCB demo](PCB-demo.gif)
 
 [YouTube Demo](https://www.youtube.com/watch?v=UengvMiGzF8)
@@ -63,6 +61,10 @@ I would recommend using the following software with this board:
 * Use your preferred image editor to make your animated .gifs! I used Photoshop, but you could also use GIMP or something!
 
 ## Design
+![PCB front](PCB-front.jpg)
+
+![PCB back](PCB-back.jpg)
+
 Gerber file download: [/gerber/esp32-hub75-driver.zip](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver.zip)
 ![Gerber design](gerber/esp32-hub75-driver.png)
 
