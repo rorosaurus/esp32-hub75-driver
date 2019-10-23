@@ -8,6 +8,13 @@ If you want to work with PxMatrix, I highly recommend checking out [Brian Lough'
 
 I simply prefer SmartMatrix, which is why I designed this shield. There are [some shields in the SmartMatrix repo](https://github.com/pixelmatix/SmartMatrix/tree/teensylc/extras/hardware) but these appear to be active and require extra components. My shield is passive and just connects the pins to the right place. It lacks a proper level-shifter, so it assumes your panel will accept the 3.3V logic from the ESP32. It also lacks an external latch, which those active shields use to free up a few more pins on your ESP32.
 
+## Demo
+![PCB front](PCB-front.jpg) ![PCB back](PCB-back.jpg)
+
+![PCB demo](PCB-demo.gif)
+
+[YouTube Demo](https://www.youtube.com/watch?v=UengvMiGzF8)
+
 ## Features
 * Connects all necessary pins to drive HUB75 panels using `ESP32_FORUM_PINOUT` from [MatrixHardware_ESP32_V0.h](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h)
 * 2x screw terminals to allow you to share 5V from the microUSB to your panels.
@@ -57,7 +64,7 @@ I would recommend using the following software with this board:
 
 ## Design
 Gerber file download: [/gerber/esp32-hub75-driver.zip](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver.zip)
-![](gerber/esp32-hub75-driver.png)
+![Gerber design](gerber/esp32-hub75-driver.png)
 
 ## Other hardware you might want
 * Project Mc2 LED Purse (harvest a cheap 16x32px LED display): [Amazon](https://smile.amazon.com/dp/B071LQR2QG/), [Adafruit article](https://blog.adafruit.com/2019/03/06/issue-16-hackspace-magazine-can-i-hack-it-a-smart-pixel-purse-neopixels-making-hackspacemag-biglesp/)
