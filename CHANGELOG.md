@@ -18,6 +18,6 @@
 
 
 * v1.1
-  * Added SMD capacitor to allow the ESP32-DEVKIT-V1 to automatically load the bootloader. Now you don't need to press the `EN` button to upload new firmware.
+  * Added SMD capacitor to allow the ESP32-DEVKIT-V1 to automatically load the bootloader. Now you don't need to press the `EN` or `BOOT` buttons to upload new firmware!
   * Consolidated power traces to one layer each.
   
