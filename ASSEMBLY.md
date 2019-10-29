@@ -46,7 +46,7 @@ TODO: pic
 This is your last chance before your currently soldered components get covered up by the ESP32 board. If you want to apply silicone conformal coating to those joints, now is the time.
 
 ## Step 3: Seat ESP32 into the PCB
-I recommend seating your [ESP32-DEVKIT-V1](https://www.aliexpress.com/item/32902307791.html) as close to my PCB as possible. This minimizes the vertical space required.
+I recommend seating your [ESP32-DEVKIT-V1](https://www.aliexpress.com/item/32902307791.html) as close to my PCB as possible. This minimizes the vertical space required. If you bought your ESP32 from AliExpress, you might have to solder the header pins on - remember to ensure they are properly straight (90 degree angle with the ESP32 PCB) before soldering too many!
 
 TODO: pic
 
