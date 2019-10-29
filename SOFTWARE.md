@@ -9,5 +9,7 @@ I would recommend using the following software with this board:
   * https://github.com/marcmerlin/Framebuffer_GFX
   * https://github.com/FastLED/FastLED
   * https://github.com/marcmerlin/SmartMatrix_GFX
-
 * Use your preferred image editor to make your animated .gifs! I used Photoshop, but you could also use GIMP or something!
+
+
+For a simple sketch that works with a cheap display, please see my [Project Mc2 LED Purse Project](https://github.com/rorosaurus/project-mc2-led-purse).

@@ -12,9 +12,9 @@
 * 3x5 = 15 pins broken out for additional use: 
   * 3x `GND`
   * 3x `3.3V`
-  * 9x `GPIO` (8 with ADC!): for buttons, potentiometers, sensors, etc.!
+  * 9x GPIO pins (8 with ADC!): for buttons, potentiometers, sensors, etc.!
 * Optional pads for one through-hole Electrolytic Capacitor (I use 1000uF) to smooth the `5V` power.
-* Optional pads for one SMD Ceramic Capacitor (I use 10uF) to enable the automatic bootloader. No more pressing buttons to upload new firmware!
+* Optional pads for one 1206 SMD Ceramic Capacitor (I use 10uF) to enable the automatic bootloader. No need to press buttons to upload new firmware!
 
 ## Assembly Instructions
 Full assembly instructions and more detailed information can be found here: [`ASSEMBLY.md`](ASSEMBLY.md)
@@ -33,3 +33,9 @@ Latest board revision is v1.1.
 See [`CHANGELOG.md`](CHANGELOG.md) for more information about board revisions.
 
 Gerber file download: [`/gerber/esp32-hub75-driver.zip`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver.zip)
+
+
+## FAQ
+I plugged everything in, and I don't see anything on my LED panel!
+* Is your code configured correctly? Right pinout? Right panel size, scantype, etc.?
+* Is the PCB plugged into the panel correctly?  It's possible to be 1 pin too high or too low. Check it is properly inserted and each pin aligns properly.
