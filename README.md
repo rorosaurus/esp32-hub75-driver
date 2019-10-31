@@ -2,7 +2,10 @@
 [![Demo](images/demo.gif)](https://www.youtube.com/watch?v=UengvMiGzF8)
 
 ## Features
-* Connects all 16 pins needed to drive HUB75 panels using [`ESP32_FORUM_PINOUT`](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h#L37) from SmartMatrix library.
+* Play animated .gifs on your LED panel using [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) and [Marc Merlin's AnimatedGIFs sketch](https://github.com/marcmerlin/AnimatedGIFs)!
+* Compatible with FastLED as well!
+* ESP32 provides 2.4GHz Wifi/Bluetooth capability, and is Arduino compatible!
+* The PCB connects all 16 pins needed to drive HUB75 panels using [`ESP32_FORUM_PINOUT`](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h#L37) from SmartMatrix library.
   * Compatible with 1/8, 1/16, and 1/32 scan type HUB75 panels.
   * Supports multiple HUB75 panels daisy-chained in series!
 * Two different ways to connect to your LED panel:
