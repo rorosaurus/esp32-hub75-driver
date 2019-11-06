@@ -1,5 +1,5 @@
 # Drive HUB75 LED panels using an ESP32-DEVKIT-V1 and SmartMatrix library
-[![Demo](images/demo.gif)](https://www.youtube.com/watch?v=UengvMiGzF8)
+[![Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/demo.gif)](https://www.youtube.com/watch?v=UengvMiGzF8)
 
 ## Features
 * Play animated .gifs on your LED panel using [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) and [Marc Merlin's AnimatedGIFs sketch](https://github.com/marcmerlin/AnimatedGIFs)!
@@ -20,20 +20,20 @@
 * Optional pads for one 1206 SMD Ceramic Capacitor (I use 10uF) to enable the automatic bootloader. No need to press buttons to upload new firmware!
 
 ## Assembly Instructions
-Full assembly instructions and more detailed information can be found here: [`ASSEMBLY.md`](ASSEMBLY.md)
+Full assembly instructions and more detailed information can be found here: [`ASSEMBLY.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/ASSEMBLY.md)
 
 ## Hardware
-For a list of required and optional components, please see [`HARDWARE.md`](HARDWARE.md)
+For a list of required and optional components, please see [`HARDWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/HARDWARE.md)
 
 ## Software
-For links to software I recommend using with this board, please see [`SOFTWARE.md`](SOFTWARE.md)
+For links to software I recommend using with this board, please see [`SOFTWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/SOFTWARE.md)
 
 Please note: my shield works with [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) library, not [PxMatrix](https://github.com/2dom/PxMatrix).
 
 ## PCB Design
 Latest board revision is v1.1.
 
-See [`CHANGELOG.md`](CHANGELOG.md) for more information about board revisions.
+See [`CHANGELOG.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/CHANGELOG.md) for more information about board revisions.
 
 Gerber file download: [`/gerber/esp32-hub75-driver.zip`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver.zip)
 
@@ -41,4 +41,4 @@ Gerber file download: [`/gerber/esp32-hub75-driver.zip`](https://github.com/roro
 ## FAQ
 I plugged everything in, and I don't see anything on my LED panel!
 * Is your code configured correctly? Right pinout? Right panel size, scantype, etc.?
-* Is the PCB plugged into the panel correctly?  It's possible to be 1 pin too high or too low. Check it is properly inserted and each pin aligns properly.
+* Is the PCB plugged into the panel correctly?  It's possible to accidently plug in 1 pin too high or too low on the panel input. Check it is properly inserted and each pin aligns properly.
