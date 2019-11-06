@@ -1,5 +1,5 @@
 # Hardware
-This page contains additional hardware you need or might want to pair with my PCB.
+This page acts as a BOM (bill of materials); it contains additional hardware you need or might want to pair with my PCB.
 
 ## Included in your Tindie purchase
 When you buy my board on Tindie, I will include these items. Store links are just in case you need more!

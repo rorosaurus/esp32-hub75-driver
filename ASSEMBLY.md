@@ -71,6 +71,10 @@ If you aren't sure what you'd like to add yet, I would recommend adding [female 
 
 The following pins are broken out from the ESP32-DEVKIT-V1: `D13`, `D14`, `D23`, `D32`, `D33`, `D34`, `D35`, `D36`, `D39`.  All pins but `D23` can perform analog reads with 12-bit precision.  Remember the ESP32 pins can only handle 3.3V logic! Pin reference: [`ESP32-DEVKIT-V1 PINS`](ESP32-DEVKIT-V1-PINOUT.png)
 
+The silkscreen labelling the GPIO pins is a little difficult to read sometimes, so here's a high res picture of the labels:
+
+![GPIO pins](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/GPIO-pins.png)
+
 The `3V3` pins carry the 3.3V power from the LDO. Please note: the LDO regulates a max of 1A, and that is shared across the ESP32 and these pins. Expect to pull < 0.5A from these pins together.
 
 Your project can also use the `BOOT` button on the ESP32-DEVKIT-V1. It's connected between `D0` and `GND`. This will interfere with your auto-bootloader, so I don't recommend it unless you really need it!
