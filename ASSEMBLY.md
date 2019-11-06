@@ -87,3 +87,10 @@ Test and confirm everything works! For links to software I recommend using with 
 
 ## Step N: Reinforcing Micro-USB, Waterproofing, hardening
 Go crazy with E6000 or your preferred epoxy! I haven't had any issues with this Micro-USB port, but please reinforce it nonetheless!  Add silicone conformal coating if you would like to waterproof anything!
+
+# Mission Complete!
+When you're done assembling, it should look something like this:
+
+![Assembled Front](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembled-front.jpg)
+
+![Assembled Back](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembled-back.jpg)
