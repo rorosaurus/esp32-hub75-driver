@@ -1,6 +1,8 @@
 # Drive HUB75 LED panels using an ESP32-DEVKIT-V1 and SmartMatrix library
 [![Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/demo.gif)](https://www.youtube.com/watch?v=UengvMiGzF8)
 
+# [Buy this PCB on Tindie! ![I sell on Tindie](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/tindie.png)](https://www.tindie.com/products/18357/)
+
 ## Features
 * Play animated .gifs on your LED panel using [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) and [Marc Merlin's AnimatedGIFs sketch](https://github.com/marcmerlin/AnimatedGIFs)!
 * Compatible with FastLED as well!
