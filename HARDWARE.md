@@ -1,19 +1,23 @@
 # Hardware
+
 This page acts as a BOM (bill of materials); it contains additional hardware you need or might want to pair with my PCB.
 
 ## Included with every Tindie purchase
+
 When you buy my board on Tindie, I will include these items. Store links are just in case you need more!
+
 * My ESP32 HUB75 driver PCB, of course!
 * Your choice of output connector:
-	* Output Mode 0: Plug the PCB directly into the panel:
-		* Female Pin Header 2x8: [Amazon](https://smile.amazon.com/gp/product/B07VJ3JCLT/), [AliExpress](https://www.aliexpress.com/item/32747224548.html)
-	* Output Mode 1: PCB plugs into the panel via a IDC ribbon cable:
-		* 16P IDC Socket: [Amazon](https://smile.amazon.com/gp/product/B010V43ACO/), [AliExpress](https://www.aliexpress.com/item/32841491526.html)
+  * Output Mode 0: Plug the PCB directly into the panel:
+    * Female Pin Header 2x8: [Amazon](https://smile.amazon.com/gp/product/B07VJ3JCLT/), [AliExpress](https://www.aliexpress.com/item/32747224548.html)
+  * Output Mode 1: PCB plugs into the panel via a IDC ribbon cable:
+    * 16P IDC Socket: [Amazon](https://smile.amazon.com/gp/product/B010V43ACO/), [AliExpress](https://www.aliexpress.com/item/32841491526.html)
 * 1206 SMD Ceramic Capacitor (~1-10uF): [AliExpress](https://www.aliexpress.com/item/32879084143.html)
   * Optionally use this to enable the auto-bootloader (no need to press buttons to upload new firmware)
 
 
 ## Required components not included:
+
 * ESP32-DEVKIT-V1: [Amazon ($7)](https://smile.amazon.com/gp/product/B07Q576VWZ/), [AliExpress ($4)](https://www.aliexpress.com/item/32902307791.html)
 * Any HUB75 type scan LED panel (E pin is connected, so should work with 1/32 panels too)
   * Looking for a cheap panel to get started?  Check out the [Project Mc2 LED Purse](https://github.com/rorosaurus/project-mc2-led-purse)!
@@ -24,6 +28,7 @@ When you buy my board on Tindie, I will include these items. Store links are jus
 
 
 ## Optional components (can be included for a fee):
+
 * If you want easy disconnect for ESP32:
   * 15 Pin Single Row Female Pin Header (buy 2): [AliExpress](https://www.aliexpress.com/item/32962790286.html)
 * If you want easy disconnect for panel power:
@@ -35,6 +40,7 @@ When you buy my board on Tindie, I will include these items. Store links are jus
   
   
 # Other LED panel related hardware you might want
+
 * Project Mc2 LED Purse (harvest a cheap 16x32px LED display): [Amazon](https://smile.amazon.com/dp/B071LQR2QG/), [Adafruit article](https://blog.adafruit.com/2019/03/06/issue-16-hackspace-magazine-can-i-hack-it-a-smart-pixel-purse-neopixels-making-hackspacemag-biglesp/), [My GitHub Project](https://github.com/rorosaurus/project-mc2-led-purse)
   * If you want to daisy-chain this display, it's missing an output socket:
     * SMT 2x8 Male IDC Socket: [AliExpress](https://www.aliexpress.com/item/32989866598.html)
@@ -43,6 +49,7 @@ When you buy my board on Tindie, I will include these items. Store links are jus
 
   
 # Alternative HUB75 shields
+
 This board was inspired by Adafruit's [RGB Matrix Featherwing Kit](https://www.adafruit.com/product/3036) and [Teensy SmartMatrix Shield](https://www.adafruit.com/product/1902)! But mine is cheaper and more powerful, with Wifi/BT!
 
 My shield only works with [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc), not [PxMatrix](https://github.com/2dom/PxMatrix).
