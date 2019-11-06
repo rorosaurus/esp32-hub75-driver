@@ -12,6 +12,7 @@
 * The PCB connects all 16 pins needed to drive HUB75 panels using [`ESP32_FORUM_PINOUT`](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h#L37) from SmartMatrix library.
   * Compatible with 1/8, 1/16, and 1/32 scan type HUB75 panels.
   * Supports multiple HUB75 panels daisy-chained in series!
+  * There is no logic level shifter, so this is only compatible with 3.3V tolerant LED panels. (I haven't found a panel that doesn't work yet!)
 * Two different ways to connect to your LED panel:
   * Output Mode 0: directly plug this PCB into your LED panel using 2x8 female pin headers.
   * Output Mode 1: connect this PCB to your LED panel via 16 pin IDC ribbon cable.
