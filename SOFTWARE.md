@@ -5,6 +5,7 @@ I would recommend using the following software with this board:
   * https://github.com/me-no-dev/arduino-esp32fs-plugin - This Arduino IDE plugin makes it simple to upload .gifs to your ESP32
 * https://github.com/marcmerlin/AnimatedGIFs - This code is a good starting point for your program. It uses the above software and libraries to playback animated .gifs for you! You can easily adjust things like the time between switching .gifs. You'll need to install (by downloading and copying to `My Documents/Arduino/libraries`) a few libraries that it uses:
   * https://github.com/pixelmatix/SmartMatrix/tree/teensylc
+    * Please note, this is a specific branch of SmartMatrix. ESP32 support only exists in this branch.
   * https://github.com/adafruit/Adafruit-GFX-Library
   * https://github.com/marcmerlin/Framebuffer_GFX
   * https://github.com/FastLED/FastLED

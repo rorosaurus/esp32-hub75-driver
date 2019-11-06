@@ -21,3 +21,6 @@
   * Added SMD capacitor to allow the ESP32-DEVKIT-V1 to automatically load the bootloader. Now you don't need to press the `EN` or `BOOT` buttons to upload new firmware!
   * Consolidated power traces to one layer each.
   
+![Front render](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/gerber/front-render.png)
+
+![Back render](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/gerber/back-render.png)
