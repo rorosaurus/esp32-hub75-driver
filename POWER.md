@@ -21,14 +21,14 @@ The panels could be getting power from the [4-pin power cable](https://www.aliex
 
 You then share that power with the ESP32. You can solder a strand of wire to the LED panel's power terminals and run that wire to my PCB. Use the `5V` and `GND` screw terminals to attach the wire if you desire, otherwise for a more permanent installation you can solder the wires, or even use the C1 capacitor pads.
 
-In this configuration, all the high current is flowing through the larger diameter power cables for the panel. This reduces a lot of stress on the ESP32 board, which now only deals with approximately 0.2A flowing in for the ESP32 itself. Temperatures stabilize at around 30°C - much more reasonable, and doesn't risk damaging the LDO, Serial-to-USB chip, etc.
+In this configuration, all the high current is flowing through the larger diameter power cables for the panel. This reduces a lot of stress on the ESP32 board, which now only deals with approximately 0.2A flowing in for the ESP32 itself. Unlike `Power Option 1`, temperatures stabilize at around 30°C - much more reasonable, and doesn't risk damaging the ESP32 board or components.
 
 ## Power Option 1: Power your LED panel via Micro-USB on the ESP32
 **NOT RECOMMENDED, but technically possible for some very small panels.**
 
 Plug in your Micro-USB cable to the ESP32, and then wire your LED panel to the `5V` and `GND` [screw terminals](https://www.aliexpress.com/item/32993227789.html) (or solder directly).
 
-![Power Option 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power/power-option-0.jpg)
+![Power Option 1](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power/power-option-1.jpg)
 
 This is the easiest way to easy snag a `5V` power source to power your panel, however it is not ideal to push so much power through the ESP32 board. I would only try this for very small panels (like 16x32), and not at max brightness! Please make sure your Micro-USB cable and USB battery pack are sourced from a quality brand (like Anker) and support the necessary amperage (I recommend 3A, just to be safe!).
 
@@ -37,4 +37,4 @@ This is included as an option for small projects like my [Project Mc2 LED Purse]
 ### Critical Limitations of Power Option 1
 **If you sourced your ESP32 from AliExpress** (white backed PCB), I would not recommend this method unless you are confident your whole project will not exceed `5W`.  I have tested these boards pulling `5W` for 30 minutes with no issues. But in another test, supplying `7W` melted the Micro-USB port's `5V` trace in less than 1 minute.
 
-**If you sourced your ESP32 from Amazon** (black backed PCB), I tested this method with `2.1A` flowing through to the panels for over 2 hours (`11W` total power over the Micro-USB port). Many components got quite hot, including: the LDO, Serial-to-USB chip, VIN pin, and Micro-USB port. I measured temperatures as high as 90°C. This heat is less than ideal, which is why I recommend using Power Option 0.
+**If you sourced your ESP32 from Amazon** (black backed PCB), I tested this method with `2.1A` flowing through to the panels for over 2 hours (`11W` total power over the Micro-USB port). Many components got quite hot, including: the LDO, Serial-to-USB chip, VIN pin, and Micro-USB port. I measured temperatures as high as 90°C. This heat is less than ideal, which is why I recommend using `Power Option 0`.
