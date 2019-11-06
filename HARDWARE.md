@@ -14,12 +14,12 @@ When you buy my board on Tindie, I will include these items. Store links are jus
 
 
 ## Required components not included:
+* ESP32-DEVKIT-V1: [Amazon ($7)](https://smile.amazon.com/gp/product/B07Q576VWZ/), [AliExpress ($4)](https://www.aliexpress.com/item/32902307791.html)
 * Any HUB75 type scan LED panel (E pin is connected, so should work with 1/32 panels too)
   * If you're using Mode 1, make sure you have a 16P IDC Cable (might have come with your panel): [AliExpress](https://www.aliexpress.com/item/32873766356.html)
   * Make sure you have a plan for how to power the panel! You might need a powerful 5V power source! See [`POWER.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/POWER.md) for the different options I recommend.
 	  * 4-pin power cables for HUB75 panels (might have come with your panel): [AliExpress](https://www.aliexpress.com/item/32832930794.html)
     * Alternatively, you can solder some random (thick enough!) wires to the power connector. Useful for low profile projects!
-* ESP32-DEVKIT-V1: [Amazon ($7)](https://smile.amazon.com/gp/product/B07Q576VWZ/), [AliExpress ($4)](https://www.aliexpress.com/item/32902307791.html)
 
 
 ## Optional components (can be included for a fee):
