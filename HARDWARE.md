@@ -1,7 +1,7 @@
 # Hardware
 This page acts as a BOM (bill of materials); it contains additional hardware you need or might want to pair with my PCB.
 
-## Included in your Tindie purchase
+## Included with every Tindie purchase
 When you buy my board on Tindie, I will include these items. Store links are just in case you need more!
 * My ESP32 HUB75 driver PCB, of course!
 * Your choice of output connector:

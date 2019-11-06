@@ -4,8 +4,9 @@
 # [Buy this PCB on Tindie! ![I sell on Tindie](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/tindie.png)](https://www.tindie.com/products/18357/)
 
 ## Features
-* Play animated .gifs on your LED panel using [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) and [Marc Merlin's AnimatedGIFs sketch](https://github.com/marcmerlin/AnimatedGIFs)!
-* Compatible with FastLED as well!
+* Compatible with [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) and [FastLED](https://github.com/FastLED/FastLED) libraries!
+  * Play animated .gifs on your LED panel using [Marc Merlin's AnimatedGIFs sketch](https://github.com/marcmerlin/AnimatedGIFs)!
+  * Animate scrolling text (and more!) using [SmartMatrix's FeatureDemo](https://github.com/pixelmatix/SmartMatrix/tree/teensylc/examples/FeatureDemo)!
 * ESP32 provides 2.4GHz Wifi/Bluetooth capability, and is Arduino compatible!
 * The PCB connects all 16 pins needed to drive HUB75 panels using [`ESP32_FORUM_PINOUT`](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h#L37) from SmartMatrix library.
   * Compatible with 1/8, 1/16, and 1/32 scan type HUB75 panels.
