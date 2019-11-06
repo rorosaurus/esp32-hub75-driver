@@ -5,7 +5,7 @@ If you haven't used the C1 pads for supplying some power, you can optionally att
 
 You may find it helpful to use some blue tack to help orient the screw terminals as you solder them in place.
 
-![Screw terminals](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/screw-terminals.jpg)
+![Screw terminals](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power/screw-terminals.jpg)
 
 # Powering your ESP32 and LED Panels
 Let's discuss the best way to power your LED panel!
@@ -15,7 +15,7 @@ Let's discuss the best way to power your LED panel!
 
 In this setup, your panels are recieving the bulk of the `5V` power directly, then you splice off a wire to share that power with the ESP32.
 
-![Power Option 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power-option-0.jpg)
+![Power Option 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power/power-option-0.jpg)
 
 The panels could be getting power from the [4-pin power cable](https://www.aliexpress.com/item/32832930794.html) that was probably included with your panel. The other end of that cable could be powered by a large 5V power supply, or (if your energy demands are small enough) you can wire it into a USB cable. You could also just solder the USB cable wires directly to the panel's power, if you're missing the proper 4-pin power cables.
 
@@ -28,7 +28,7 @@ In this configuration, all the high current is flowing through the larger diamet
 
 Plug in your Micro-USB cable to the ESP32, and then wire your LED panel to the `5V` and `GND` [screw terminals](https://www.aliexpress.com/item/32993227789.html) (or solder directly).
 
-![Power Option 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power-option-0.jpg)
+![Power Option 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power/power-option-0.jpg)
 
 This is the easiest way to easy snag a `5V` power source to power your panel, however it is not ideal to push so much power through the ESP32 board. I would only try this for very small panels (like 16x32), and not at max brightness! Please make sure your Micro-USB cable and USB battery pack are sourced from a quality brand (like Anker) and support the necessary amperage (I recommend 3A, just to be safe!).
 

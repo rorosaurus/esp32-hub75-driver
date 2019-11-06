@@ -12,23 +12,23 @@ Choose your output mode and seat your output connector accordingly.
 ### Output Mode 0
 Directly plug this PCB into your LED panel using [2x8 female pin headers](https://www.aliexpress.com/item/32747224548.html).
 
-![Output Mode 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/output-mode-0.jpg)
+![Output Mode 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0.jpg)
 
-![Output Mode 0 Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/output-mode-0.gif)
+![Output Mode 0 Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0.gif)
 
 ### Output Mode 1
 Connect this PCB to your LED panel via [16-pin IDC ribbon cable](https://www.aliexpress.com/item/32873766356.html) plugged in to a [16-pin IDC socket](https://www.aliexpress.com/item/32841491526.html).
 
 Note: the missing edge on your IDC socket should face towards the unused Mode 0 column. Orientation is important!
 
-![Output Mode 1](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/output-mode-1.jpg)
+![Output Mode 1](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1.jpg)
 
-![Output Mode 1 Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/output-mode-1.gif)
+![Output Mode 1 Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1.gif)
 
 ## Step 2: Solder output connector joints
 Flip over the PCB and solder your connector's joints
 
-![Step 2](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/step-2.jpg)
+![Step 2](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/step-2.jpg)
 
 ## Step 2.5 (*optional*): Solder auto-bootloader capacitor
 [Technically](https://github.com/espressif/esptool/wiki/ESP32-Boot-Mode-Selection), you're supposed to hold down `BOOT` button when powering on the ESP32 to enter bootloader and upload new code.
@@ -39,11 +39,11 @@ Without this capacitor, you'll need to hold down `BOOT` for ~3 seconds when Ardu
 
 If you'd like to add it, solder a [1206 SMD 10uF Ceramic Capacitor](https://www.aliexpress.com/item/32879084143.html) to C2. This type of capacitor is not polarized, so the orientation does not matter. I've also had success with a 1uF capacitor, so I don't think the value needs to be exact. It's easy to solder by hand: just add some solder to one pad first, then use tweezers in one hand and your soldering iron in the other. After you finish soldering one half, you can ditch the tweezers for your solder and complete the other side.
 
-![Bootloader capacitor](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/bootloader-cap.jpg)
+![Bootloader capacitor](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/bootloader-cap.jpg)
 
 If you don't have a ceramic capcitor, you can solder a 10uF electrolytic capacitor to the pads. Keep in mind you will place the ESP32 on top in a moment. I would suggest that you run the long legs of the capacitor pins out from under the ESP32, off the edge of the PCB. However, you might also prefer to leave the capacitor in place and increase the height of the sandwiched PCBs.
 
-![Alternative bootloader capacitor](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/alt-bootloader-cap.jpg)
+![Alternative bootloader capacitor](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/alt-bootloader-cap.jpg)
 
 ## Step 2.99 (*optional*): Apply waterproofing
 This is your last chance before your currently soldered components get covered up by the ESP32 board. If you want to apply silicone conformal coating to those joints, now is the time.
@@ -51,18 +51,18 @@ This is your last chance before your currently soldered components get covered u
 ## Step 3: Seat ESP32 into the PCB
 I recommend seating your [ESP32-DEVKIT-V1](https://www.aliexpress.com/item/32902307791.html) as close to my PCB as possible. This minimizes the vertical space required. If you bought your ESP32 from AliExpress, you might have to solder the header pins on - remember to ensure they are properly straight (90 degree angle with the ESP32 PCB) before soldering too many!
 
-![Step 3](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/step-3.gif)
+![Step 3](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/step-3.gif)
 
 If you want to be able to detach the ESP32, you can attach [two 15-Pin Single Row female pin headers](https://www.aliexpress.com/item/32962790286.html) instead.
 
 ## Step 4: Solder ESP32 pins onto the PCB
 Flip over the PCB and solder the ESP32 pins (or pin headers, if you want to easily detach the ESP32).
 
-![Step 4](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/step-4.jpg)
+![Step 4](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/step-4.jpg)
 
 You can optionally trim the pins after soldering, if you want.
 
-![Trim pins](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/trim-pins.jpg)
+![Trim pins](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/trim-pins.jpg)
 
 ## Step 5: GPIO pins
 At this stage I would recommend adding in any buttons, switches, sensors, etc. you'd like to add.  You can attach these to the breakout pins in the corner! You can add/modify these later too, I just think it's easiest to do this now (just in case you add the C1 capacitor - things start to get crowded!).
