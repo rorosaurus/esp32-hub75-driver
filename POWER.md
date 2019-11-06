@@ -1,5 +1,5 @@
 # General Power Notes
-The `5V` and `GND` from the Micro-USB is in parallel with the two screw terminals and the C1 capacitor. They all have the same trace width (which should support TODO:update 2.1 Amps), and can be used interchangeably. If you are ever confused about which pad recieves which signal, you can confirm with your multimeter in diode mode and probing when the circuit is disconnected.
+The `5V` and `GND` from the Micro-USB is in parallel with the two screw terminals and the C1 capacitor. They all have the same trace width and can be used interchangeably. If you are ever confused about which pad recieves which signal, you can confirm with your multimeter in diode mode and probing when the circuit is disconnected.
 
 If you haven't used the C1 pads for supplying some power, you can optionally attach and solder a [1000uF through-hole Electrolytic Capacitor](https://www.aliexpress.com/item/32812085542.html). Take note of the polarity! This capacitor will help prevent brownouts/restarts caused by voltage sag when your panels light up bright suddenly. You can also fold this capacitor down if you want to reduce the vertical space it consumes.
 
@@ -37,4 +37,4 @@ This is included as an option for small projects like my [Project Mc2 LED Purse]
 ### Critical Limitations of Power Option 1
 **If you sourced your ESP32 from AliExpress** (white backed PCB), I would not recommend this method unless you are confident your whole project will not exceed `5W`.  I have tested these boards pulling `5W` for 30 minutes with no issues. But in another test, supplying `7W` melted the Micro-USB port's `5V` trace in less than 1 minute.
 
-**If you sourced your ESP32 from Amazon** (black backed PCB), I tested this method with `2.1A` flowing through to the panels for over 2 hours (`11W` total power over the Micro-USB port). Many components got quite hot, including: the LDO, Serial-to-USB chip, VIN pin, and Micro-USB port. I measured temperatures as high as 90°C. This heat is less than ideal, which is why I recommend using `Power Option 0`.
+**If you sourced your ESP32 from Amazon** (black backed PCB), I tested this method with `2A` flowing through to the panels for over 2 hours (`11W` total power over the Micro-USB port). Many components got quite hot, including: the LDO, Serial-to-USB chip, VIN pin, and Micro-USB port. I measured temperatures as high as 90°C. This heat is less than ideal, which is why I recommend using `Power Option 0`.
