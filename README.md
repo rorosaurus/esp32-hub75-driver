@@ -24,6 +24,10 @@
 * Optional pads for one through-hole Electrolytic Capacitor (I use 1000uF) to smooth the `5V` power.
 * Optional pads for one 1206 SMD Ceramic Capacitor (I use 10uF) to enable the automatic bootloader. No need to press buttons to upload new firmware!
 
+## Example Projects
+* [FurretTotem](https://ravefurret.com/): HE WALK! This cute little guy just keeps on walking.
+* [Project Mc2 LED Purse](https://github.com/rorosaurus/project-mc2-led-purse): Cheap children's toy you can harvest a good beginner panel from!
+
 ## Assembly Instructions
 Full assembly instructions and more detailed information can be found here: [`ASSEMBLY.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/ASSEMBLY.md)
 
