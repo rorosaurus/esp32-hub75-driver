@@ -77,7 +77,7 @@ The silkscreen labelling the GPIO pins is a little difficult to read sometimes, 
 
 The `3V3` pins carry the 3.3V power from the LDO. Please note: the LDO regulates a max of 1A, and that is shared across the ESP32 and these pins. Expect to pull < 0.5A from these pins together.
 
-Your project can also use the `BOOT` button on the ESP32-DEVKIT-V1. It's connected between `D0` and `GND`. This will interfere with your auto-bootloader, so I don't recommend it unless you really need it!
+In a pinch, your project can also use the `BOOT` button on the ESP32-DEVKIT-V1. It's connected between `D0` and `GND`. This will interfere with your auto-bootloader, requiring you to hold the `BOOT` button when plugging in your ESP32 in order to program it.
 
 ## Step 6: Power flow
 Let's figure out the best way to power your ESP32 and LED panels! Head over to my power document: [`POWER.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/POWER.md)!

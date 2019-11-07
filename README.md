@@ -27,7 +27,7 @@
 ## Assembly Instructions
 Full assembly instructions and more detailed information can be found here: [`ASSEMBLY.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/ASSEMBLY.md)
 
-## Hardware
+## Hardware (BOM)
 For a list of required and optional components, please see [`HARDWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/HARDWARE.md)
 
 ## Software
