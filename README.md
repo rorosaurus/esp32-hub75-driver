@@ -38,10 +38,11 @@ Please note: my shield works with [SmartMatrix](https://github.com/pixelmatix/Sm
 ## PCB Design
 Latest board revision is v1.1.
 
-See [`CHANGELOG.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/CHANGELOG.md) for more information about board revisions.
+See [`CHANGELOG.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/CHANGELOG.md) for information about board revisions and high resolution renders of the board.
+
+Schematic download (EasyEDA source): [`/gerber/esp32-hub75-driver-schem.json`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver-schem.json)
 
 Gerber file download: [`/gerber/esp32-hub75-driver.zip`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver.zip)
-
 
 ## FAQ
 I plugged everything in, and I don't see anything on my LED panel!
