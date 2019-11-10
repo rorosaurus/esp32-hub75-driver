@@ -21,6 +21,7 @@ When you buy my board on Tindie, I will include these items. Store links are jus
 * ESP32-DEVKIT-V1: [Amazon ($7)](https://smile.amazon.com/gp/product/B07Q576VWZ/), [AliExpress ($4)](https://www.aliexpress.com/item/32902307791.html)
 * Any HUB75 type scan LED panel (E pin is connected, so should work with 1/32 panels too)
   * Looking for a cheap panel to get started?  Check out the [Project Mc2 LED Purse](https://github.com/rorosaurus/project-mc2-led-purse)!
+  * Note that larger panels (> 64x64px) might not leave enough free DMA-capable memory to also utilize Wifi in your sketch! I can use a 128x64px panel, but there's no memory left for Wifi (and it lags if the animations are too long)!
   * If you're using Mode 1, make sure you have a 16P IDC Cable (might have come with your panel): [AliExpress](https://www.aliexpress.com/item/32873766356.html)
   * Make sure you have a plan for how to power the panel! You might need a powerful 5V power source! See [`POWER.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/POWER.md) for the different options I recommend.
     * 4-pin power cables for HUB75 panels (might have come with your panel): [AliExpress](https://www.aliexpress.com/item/32832930794.html)
