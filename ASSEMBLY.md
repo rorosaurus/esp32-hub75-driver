@@ -10,20 +10,24 @@ Have everything?  Let's begin!
 Choose your output mode and seat your output connector accordingly.
 
 ### Output Mode 0
-Directly plug this PCB into your LED panel using [2x8 female pin headers](https://www.aliexpress.com/item/32747224548.html).
+Directly plug this PCB into your LED panel using [2x8 female pin headers](https://www.aliexpress.com/item/32747224548.html). Here's how this mode would look when you're done:
 
-![Output Mode 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0.jpg)
+![Output Mode 0 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0-example.gif)
 
-![Output Mode 0 Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0.gif)
+Here's how to mount your pin headers for Mode 0:
+
+![Assemble Output for Mode 0](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0.jpg)
 
 ### Output Mode 1
-Connect this PCB to your LED panel via [16-pin IDC ribbon cable](https://www.aliexpress.com/item/32873766356.html) plugged in to a [16-pin IDC socket](https://www.aliexpress.com/item/32841491526.html).
+Connect this PCB to your LED panel via [16-pin IDC ribbon cable](https://www.aliexpress.com/item/32873766356.html) plugged in to a [16-pin IDC socket](https://www.aliexpress.com/item/32841491526.html). Here's how you would plug into your LED panel in this mode:
+
+![Output Mode 1 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1-example.jpg)
+
+How to mount your 16-pin IDC socket for Mode 1:
+
+![Assemble Output for Mode 1](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1.gif)
 
 Note: the missing edge on your IDC socket should face towards the unused Mode 0 column. Orientation is important!
-
-![Output Mode 1](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1.jpg)
-
-![Output Mode 1 Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1.gif)
 
 ## Step 2: Solder output connector joints
 Flip over the PCB and solder your connector's joints
