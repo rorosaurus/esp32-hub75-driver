@@ -18,7 +18,7 @@ When you buy my board on Tindie, I will include these items. Store links are jus
 
 ## Required components not included:
 
-* ESP32-DEVKIT-V1: [Amazon ($7)](https://smile.amazon.com/gp/product/B07Q576VWZ/), [AliExpress ($4)](https://www.aliexpress.com/item/32902307791.html)
+* ESP32-DEVKIT-V1: [Amazon ($7)](https://smile.amazon.com/gp/product/B07Q576VWZ/)
 * Any HUB75 type scan LED panel (E pin is connected, so should work with 1/32 panels too)
   * Looking for a cheap panel to get started?  Check out the [Project Mc2 LED Purse](https://github.com/rorosaurus/project-mc2-led-purse)!
   * Note that larger panels (> 64x64px) might not leave enough free DMA-capable memory to also utilize Wifi in your sketch! I can use a 128x64px panel, but there's no memory left for Wifi (and it lags if the animations are too long)!
