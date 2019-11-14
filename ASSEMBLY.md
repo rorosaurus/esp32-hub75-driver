@@ -86,6 +86,8 @@ In a pinch, your project can also use the `BOOT` button on the ESP32-DEVKIT-V1. 
 ## Step 6: Power flow
 Let's figure out the best way to power your ESP32 and LED panels! Head over to my power document: [`POWER.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/POWER.md)!
 
+This is also the point where you would attach the optional smoothing capacitor to C1! Check the polarity! The (-) terminal on the capacitor should be painted white and have printed negative signs. That white side should line up with the white print on the PCB when you insert the capacitor.
+
 ## Step N-1: Testing
 Test and confirm everything works! For links to software I recommend using with this board, please see [`SOFTWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/SOFTWARE.md)!
 
