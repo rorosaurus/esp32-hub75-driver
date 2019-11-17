@@ -1,4 +1,6 @@
 # General Power Notes
+These LED panels can demand multiple (sometimes up to 5!) Amps of current at 5V. Please make sure you have a beefy 5V power supply if you want to avoid problems.  If you're trying to power your project off portable USB battery banks, make sure they can do 5V/3A, and be sure to test how many Amps you are pulling (with a USB multimeter) and set a reasonable brightness limit! Make sure your USB cable is also thick enough to handle that current. I recommend at least 22AWG thickness. I personally cannibalized [these cables](https://smile.amazon.com/gp/product/B011KMSNXM/) with good success - cutting them and soldering them to the 4-pin power cable provided with my panels.
+
 The `5V` and `GND` from the Micro-USB is in parallel with the two screw terminals and the C1 capacitor. They all have the same trace width and can be used interchangeably. If you are ever confused about which pad recieves which signal, you can confirm with your multimeter in diode mode and probing when the circuit is disconnected.
 
 If you haven't used the C1 pads for supplying some power, you can optionally attach and solder a [1000uF through-hole Electrolytic Capacitor](https://www.aliexpress.com/item/32812085542.html). Take note of the polarity! This capacitor will help prevent brownouts/restarts caused by voltage sag when your panels light up bright suddenly. You can also fold this capacitor down if you want to reduce the vertical space it consumes.
@@ -21,7 +23,7 @@ The panels could be getting power from the [4-pin power cable](https://www.aliex
 
 You then share that power with the ESP32. You can solder a strand of wire to the LED panel's power terminals and run that wire to my PCB. Use the `5V` and `GND` screw terminals to attach the wire if you desire, otherwise for a more permanent installation you can solder the wires, or even use the C1 capacitor pads.
 
-In this configuration, all the high current is flowing through the larger diameter power cables for the panel. This reduces a lot of stress on the ESP32 board, which now only deals with approximately 0.2A flowing in for the ESP32 itself. Unlike `Power Option 1`, temperatures stabilize at around 30°C - much more reasonable, and doesn't risk damaging the ESP32 board or components.
+In this configuration, all the high current is flowing through the larger diameter power cables for the panel. This reduces a lot of stress on the ESP32 board, which now only deals with approximately 0.3A flowing in for the ESP32 itself. Unlike `Power Option 1`, temperatures stabilize at around 30°C - much more reasonable, and doesn't risk damaging the ESP32 board or components.
 
 ## Power Option 1: Power your LED panel via Micro-USB on the ESP32
 **NOT RECOMMENDED, but technically possible for some very small panels.**
