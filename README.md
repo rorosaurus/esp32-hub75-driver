@@ -13,9 +13,9 @@
   * Compatible with 1/8, 1/16, and 1/32 scan type HUB75 panels.
   * Supports multiple HUB75 panels daisy-chained in series!
   * There is no logic level shifter, so this is only compatible with 3.3V tolerant LED panels. (I haven't found a panel that doesn't work yet!)
-* Two different ways to connect to your LED panel:
+* [Two different ways to connect to your LED panel](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/ASSEMBLY.md#step-1-mount-output-connector-onto-the-pcb):
   * Output Mode 0: directly plug this PCB into your LED panel using 2x8 female pin headers.
-  * Output Mode 1: connect this PCB to your LED panel via 16 pin IDC ribbon cable.
+  * Output Mode 1: connect this PCB to your LED panel via 16 pin IDC socket (ribbon cable not included).
 * 3x5 = 15 pins broken out for additional use: 
   * 3x `GND`
   * 3x `3.3V`
