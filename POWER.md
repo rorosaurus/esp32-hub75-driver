@@ -9,6 +9,8 @@ You may find it helpful to use some blue tack to help orient the screw terminals
 
 ![Screw terminals](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power/screw-terminals.jpg)
 
+If you only have one screw terminal, you can still fit it between `5V` and `GND`, so you have one pin of each.
+
 # Powering your ESP32 and LED Panels
 Let's discuss the best way to power your LED panel!
 
