@@ -1,7 +1,7 @@
 # Software
 
 ## Drivers
-Th ESP32 cannot directly communicate over USB with your computer to reprogram itself. It [uses an onboard chip](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html) to do so, which requires you to install a driver. You only need to install the `CP210X` driver for your appropriate operating system.
+The ESP32 cannot directly communicate over USB with your computer to reprogram itself. It [uses an onboard chip](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html) (specifically, SiLab's `CP2102`) to do so, which requires you to install a driver. You only need to install the `CP210X` driver for your appropriate operating system.
 
 [Download the driver here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 

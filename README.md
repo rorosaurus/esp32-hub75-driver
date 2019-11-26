@@ -39,6 +39,9 @@ For links to software I recommend using with this board, please see [`SOFTWARE.m
 
 Please note: my shield works with [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) library, not [PxMatrix](https://github.com/2dom/PxMatrix).
 
+## Powering your project
+To find out the best way to power your ESP32 and LED panels, please head over to my power document: [`POWER.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/POWER.md)!
+
 ## PCB Design
 Latest board revision is v1.1.
 
