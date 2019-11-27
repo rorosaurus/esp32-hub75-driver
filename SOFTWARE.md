@@ -30,7 +30,10 @@ If you want to use Wifi, you will need to install additional libraries:
 The gifs are loaded onto the ESP32's SPIFFS: an integrated filesystem that shares the same flash memory as your program.  You have 4MB shared between the GIFs and your program code. Edit your own gifs using Photoshop or some other editor, then use [this Arduino IDE plugin](https://github.com/me-no-dev/arduino-esp32fs-plugin) to upload .gifs to your ESP32 via the Arduino IDE!
 
 ## Example Sketches
-Keep in mind you'll need to tweak some variables to match your LED panel size, scanrate, etc.
+Keep in mind you'll need to tweak some variables to match your LED panel's parameters:
+* LED panel size - `kMatrixWidth = 32;`, `kMatrixHeight = 16;` replace with your width and height in pixels
+* Scantype - `kPanelType = SMARTMATRIX_HUB75_16ROW_MOD8SCAN;` for 1/8 scan, or `SMARTMATRIX_HUB75_32ROW_MOD16SCAN` for 1/16 scan panels, or `SMARTMATRIX_HUB75_64ROW_MOD32SCAN` for 1/32 scan panels
+* Pinout - `#define GPIOPINOUT ESP32_FORUM_PINOUT` place this somewhere near the top of your sketch!
 
 Note: some ESP32 dev boards require you to hold the BOOT button for ~3s to connect during sketch upload. If you're using my PCB and you have attached the auto-bootloader capacitor, you don't need to worry about this!
 
