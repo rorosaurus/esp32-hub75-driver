@@ -51,6 +51,8 @@ Schematic download (EasyEDA source): [`/gerber/esp32-hub75-driver-schem.json`](h
 
 Gerber file download: [`/gerber/esp32-hub75-driver.zip`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/gerber/esp32-hub75-driver.zip)
 
+Thank you to [PCBWay](https://www.pcbway.com/) for sponsoring this project! Please see my review of their service [here](https://www.youtube.com/watch?v=prrjjGhm5Mo).
+
 ## FAQ
 I plugged everything in, and I don't see anything on my LED panel!
 * Is your code configured correctly? Right pinout? Right panel size, scantype, etc.?
