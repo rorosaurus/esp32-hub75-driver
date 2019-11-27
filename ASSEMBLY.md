@@ -1,10 +1,13 @@
 # Assembly Instructions
 Please read all these instructions. There is important information in here that might not be immediately obvious. It is possible to solder connectors on the wrong side and end up with an invalid setup - pay close attention!
 
-## Step 0: Buy components in advance
+## Step -1: Buy components in advance
 For a list of required and optional components, please see [`HARDWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/HARDWARE.md).
 
 Have everything?  Let's begin!
+
+## Step 0: Verify your ESP32 board before soldering anything
+Test and confirm your ESP32 works! Go to [`SOFTWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/SOFTWARE.md) and install all the appropriate drivers, software, etc. and upload an example sketch to your board! Since the auto-bootloader capacitor isn't connected, you will need to hold `BOOT` for 2-3 seconds during the `Connecting...` phase. Once you have confirmed you can upload to your ESP32, you can proceed to assemble the hardware!
 
 ## Step 1: Mount output connector onto the PCB
 Choose your output mode and seat your output connector accordingly.
@@ -88,7 +91,7 @@ Let's figure out the best way to power your ESP32 and LED panels! Head over to m
 
 This is also the point where you would attach the optional smoothing capacitor to C1! Check the polarity! The (-) terminal on the capacitor should be painted white and have printed negative signs. That white side should line up with the white print on the PCB when you insert the capacitor.
 
-## Step N-1: Testing
+## Step N-1: Testing and uploading code
 Test and confirm everything works! For links to software I recommend using with this board, please see [`SOFTWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/SOFTWARE.md)!
 
 ## Step N: Reinforcing Micro-USB, Waterproofing, hardening
@@ -100,3 +103,10 @@ When you're done assembling, it should look something like this:
 ![Assembled Front](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembled-front.jpg)
 
 ![Assembled Back](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembled-back.jpg)
+
+You attach it to the LED panel like this for Output Mode 0:
+![Output Mode 0 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0-example.gif)
+
+
+You attach it to the LED panel like this for Output Mode 1:
+![Output Mode 1 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1-example.jpg)
