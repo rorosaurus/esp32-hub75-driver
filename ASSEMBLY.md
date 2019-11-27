@@ -105,8 +105,10 @@ When you're done assembling, it should look something like this:
 ![Assembled Back](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembled-back.jpg)
 
 You attach it to the LED panel like this for Output Mode 0:
+
 ![Output Mode 0 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0-example.gif)
 
 
 You attach it to the LED panel like this for Output Mode 1:
+
 ![Output Mode 1 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1-example.jpg)
