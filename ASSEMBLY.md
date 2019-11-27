@@ -1,4 +1,4 @@
-# Assembly Instructions
+# PCB Assembly Instructions
 Please read all these instructions. There is important information in here that might not be immediately obvious. It is possible to solder connectors on the wrong side and end up with an invalid setup - pay close attention!
 
 ## Step -1: Buy components in advance
@@ -104,6 +104,8 @@ When you're done assembling, it should look something like this:
 
 ![Assembled Back](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembled-back.jpg)
 
+
+# Attaching to your LED panel
 You attach it to the LED panel like this for Output Mode 0:
 
 ![Output Mode 0 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0-example.gif)
