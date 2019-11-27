@@ -27,7 +27,7 @@ If you want to use Wifi, you will need to install additional libraries:
 * https://github.com/me-no-dev/ESPAsyncWebServer
 
 ## Example Sketches
-Keep in mind you'll need to tweak some variables to match your LED panel size, scanrate, etc.
+Keep in mind you'll need to tweak some variables to match your LED panel size, scanrate, etc. When uploading to the board via Arduino IDE, please use the board: `DOIT ESP32 DEVKIT V1`.
 * https://github.com/rorosaurus/project-mc2-led-purse - A small repository of a few basic sketches I've constructed to make your introduction as easy as possible! Works with a very cheap display.
 * https://github.com/marcmerlin/AnimatedGIFs - This code is a good starting point for your program. It uses the above software and libraries to playback animated .gifs for you! You can easily adjust things like the time between switching .gifs. 
 * https://github.com/rorosaurus/captive-wifi-remote - The basic guts of a simple webserver to control your panel.
