@@ -89,7 +89,13 @@ In a pinch, your project can also use the `BOOT` button on the ESP32-DEVKIT-V1. 
 ## Step 6: Power flow
 Let's figure out the best way to power your ESP32 and LED panels! Head over to my power document: [`POWER.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/POWER.md)!
 
-This is also the point where you would attach the optional smoothing capacitor to C1! Check the polarity! The (-) terminal on the capacitor should be painted white and have printed negative signs. That white side should line up with the white print on the PCB when you insert the capacitor.
+If you haven't used the C1 pads for supplying some power, you can optionally attach and solder a [1000uF through-hole Electrolytic Capacitor](https://www.aliexpress.com/item/32812085542.html). Take note of the polarity! The (-) terminal on the capacitor should be painted white and have printed negative signs. That white side should line up with the white print on the PCB when you insert the capacitor. This capacitor will help prevent brownouts/restarts caused by voltage sag when your panels light up bright suddenly. You can also fold this capacitor down if you want to reduce the vertical space it consumes.
+
+You may also attach the optional screw terminals at this point. These screw terminals simply make it easier for you to connect power to/from the ESP32. You may find it helpful to use some blue tack to help orient the screw terminals as you solder them in place.
+
+![Screw terminals](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power/screw-terminals.jpg)
+
+If you only have one screw terminal, you can still fit it between `5V` and `GND`, so you have one pin of each!
 
 ## Step N-1: Testing and uploading code
 Test and confirm everything works! For links to software I recommend using with this board, please see [`SOFTWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/SOFTWARE.md)!
