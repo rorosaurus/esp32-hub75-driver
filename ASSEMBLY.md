@@ -101,7 +101,7 @@ If you only have one screw terminal, you can still fit it between `5V` and `GND`
 Test and confirm everything works! For links to software I recommend using with this board, please see [`SOFTWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/SOFTWARE.md)!
 
 ## Step N: Reinforcing Micro-USB, Waterproofing, hardening
-Go crazy with E6000 or your preferred epoxy! I haven't had any issues with this Micro-USB port, but please reinforce it nonetheless!  Add silicone conformal coating if you would like to waterproof anything!
+Go crazy with E6000 or your preferred epoxy! I haven't had any issues with this Micro-USB port, but please reinforce it nonetheless! Take care not to accidentally fill the inner part of the port!  Add silicone conformal coating if you would like to waterproof anything!
 
 # Mission Complete!
 When you're done assembling, it should look something like this:
@@ -112,11 +112,11 @@ When you're done assembling, it should look something like this:
 
 
 # Attaching to your LED panel
-You attach it to the LED panel like this for Output Mode 0:
+Attach your PCB to the LED panel like this for Output Mode 0:
 
 ![Output Mode 0 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-0-example.gif)
 
 
-You attach it to the LED panel like this for Output Mode 1:
+Attach your PCB to the LED panel like this for Output Mode 1:
 
 ![Output Mode 1 Example](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/output-mode-1-example.jpg)
