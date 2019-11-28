@@ -11,7 +11,7 @@
 * ESP32 provides 2.4GHz Wifi/Bluetooth capability, and is Arduino compatible!
 * The PCB connects all 16 pins needed to drive HUB75 panels using [`ESP32_FORUM_PINOUT`](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h#L37) from SmartMatrix library.
   * Compatible with 1/8, 1/16, and 1/32 scan type HUB75 panels.
-  * Supports multiple HUB75 panels daisy-chained in series!
+  * Supports multiple HUB75 panels daisy-chained in series! (Verified working with 5 panels!)
   * There is no logic level shifter, so this is only compatible with 3.3V tolerant LED panels. (I haven't found a panel that doesn't work yet!)
 * [Two different ways to connect to your LED panel](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/ASSEMBLY.md#step-1-mount-output-connector-onto-the-pcb):
   * Output Mode 0: directly plug this PCB into your LED panel using 2x8 female pin headers.
