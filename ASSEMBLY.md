@@ -48,19 +48,19 @@ If you'd like to add it, solder a [1206 SMD 10uF Ceramic Capacitor](https://www.
 
 ![Bootloader capacitor](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/bootloader-cap.jpg)
 
-If you don't have a ceramic capcitor, you can solder a 10uF electrolytic capacitor to the pads. Keep in mind you will place the ESP32 on top in a moment. I would suggest that you run the long legs of the capacitor pins out from under the ESP32, off the edge of the PCB. However, you might also prefer to leave the capacitor in place and increase the height of the sandwiched PCBs.
+If you don't have a ceramic capcitor, you can solder a 10uF electrolytic capacitor to the pads. Check your polarity! Keep in mind you will place the ESP32 on top in a moment. I would suggest that you run the long legs of the capacitor pins out from under the ESP32, off the edge of the PCB. However, you might also prefer to leave the capacitor in place and increase the height of the sandwiched PCBs.
 
 ![Alternative bootloader capacitor](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/alt-bootloader-cap.jpg)
 
 ## Step 2.99 (*optional*): Apply waterproofing
-This is your last chance before your currently soldered components get covered up by the ESP32 board. If you want to apply silicone conformal coating to those joints, now is the time.
+This is your last chance before your currently soldered components get covered up by the ESP32 board. If you want to apply silicone conformal coating to those joints, now is the time. Also, consider what parts underneath the ESP32 itself will be inaccessible soon, and conformal coat there as well.
 
 ## Step 3: Seat ESP32 into the PCB
 I recommend seating your [ESP32-DEVKIT-V1](https://www.aliexpress.com/item/32902307791.html) as close to my PCB as possible. This minimizes the vertical space required. If you bought your ESP32 from AliExpress, you might have to solder the header pins on - remember to ensure they are properly straight (90 degree angle with the ESP32 PCB) before soldering too many!
 
 ![Step 3](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/step-3.gif)
 
-If you want to be able to detach the ESP32, you can attach [two 15-Pin Single Row female pin headers](https://www.aliexpress.com/item/32962790286.html) instead.
+If you want to be able to detach the ESP32, you can attach [two 15-Pin Single Row female pin headers](https://www.aliexpress.com/item/32962790286.html) instead. Keep in mind this increases the overall height of the device.
 
 ## Step 4: Solder ESP32 pins onto the PCB
 Flip over the PCB and solder the ESP32 pins (or pin headers, if you want to easily detach the ESP32).
@@ -82,9 +82,9 @@ The silkscreen labelling the GPIO pins is a little difficult to read sometimes, 
 
 ![GPIO pins](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/assembly/GPIO-pins.png)
 
-The `3V3` pins carry the 3.3V power from the LDO. Please note: the LDO regulates a max of 1A, and that is shared across the ESP32 and these pins. Expect to pull < 0.5A from these pins together.
+The `3V3` pins carry the 3.3V power from the ESP32's LDO. Please note: the LDO regulates a max of 1A, and that is shared across the ESP32 and these pins. Expect to pull < 0.5A from these `3V3` pins altogether.
 
-In a pinch, your project can also use the `BOOT` button on the ESP32-DEVKIT-V1. It's connected between `D0` and `GND`. This will interfere with your auto-bootloader, requiring you to hold the `BOOT` button when plugging in your ESP32 in order to program it.
+In a pinch, your sketch can make use the `BOOT` button on the ESP32-DEVKIT-V1. It's connected between `D0` and `GND`. This might interfere with your auto-bootloader, requiring you to hold the `BOOT` button when plugging in your ESP32 in order to program it.
 
 ## Step 6: Power flow
 Let's figure out the best way to power your ESP32 and LED panels! Head over to my power document: [`POWER.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/POWER.md)!
