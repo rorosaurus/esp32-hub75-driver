@@ -1,16 +1,16 @@
 # General Power Notes
 These LED panels can demand multiple (sometimes up to 5!) Amps of current at 5V. Please make sure you have a beefy 5V power supply and thick cables if you want to avoid problems.
 
-The `5V` and `GND` from the Micro-USB is in parallel with the two screw terminals and the C1 capacitor. They all have the same trace width and can be used interchangeably to supply or provide power to the ESP32. If you are ever confused about which pad recieves which signal, you can confirm with your multimeter in diode mode and probing when the circuit is disconnected from power.
+The `5V` and `GND` from the Micro-USB on the ESP32 board is in parallel with the two screw terminals and the C1 capacitor. They all have the same trace width and can be used interchangeably to supply or provide power to the ESP32. If you are ever confused about which pad recieves which signal, you can confirm with your multimeter in diode mode and probing when the circuit is disconnected from power.
 
 # Mobile Power Notes
-It is possible to power your panel off USB battery packs. If you want to try this, I would recommend making sure your battery pack can do 5V/3A. This is the maximum current typically allowed for USB-A connectors. You might be able to find some USB-C battery packs that can do more.
+It is possible to power your panel off USB battery packs (although it is unlikely you can safely do anywhere near maximum brightness on anything besides tiny 32x16 panels). If you want to try this, I would recommend making sure your battery pack can do 5V/3A. This is the maximum current typically allowed for USB-A connectors. You might be able to find some USB-C battery packs that can do more.
 
 Your LED panel and my PCB are not equipped to take full advantage of USB-PD or QC3.0 battery packs. If you plug into those, they should only provide the basic 5V/3A.
 
-Start testing with a very low brightness (like 25/255) to ensure you do not pull too many Amps. Be sure to test how many Amps you are pulling (a USB multimeter makes this easy!) and set a reasonable brightness limit in your sketch, so you never exceed 3A! I actually set my maximum brightness well below 3A just to be safe.
+Start testing with a very low brightness (like 20/255 [some extremely low brightnesses might not display anything at all, FYI]) to ensure you do not pull too many Amps. Be sure to test how many Amps you are pulling (a USB multimeter makes this easy!) and set a reasonable brightness limit in your sketch, so you never exceed 3A! I actually set my maximum brightness to around 2.5A just to be safe.
 
-Make sure your USB cable is also thick enough to handle that current. I recommend at least 22AWG thickness. I personally cannibalized [these cables](https://smile.amazon.com/gp/product/B011KMSNXM/) with good success. I cut them and soldered them to the 4-pin power cable provided with my panels.
+Make sure your USB cable is also thick enough to handle that current. I recommend at least 22AWG thickness. I personally cannibalized [these cables](https://smile.amazon.com/gp/product/B011KMSNXM/) with good success. I cut them and soldered them to the 4-pin power cable provided with my panels. Try not to make your cable unnecessarily long, if you can avoid it.
 
 ![USB 4-pin power cable](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/power/usb-4-pin-power-cable.jpg)
 
@@ -57,3 +57,5 @@ This is included as an option for small projects like my [Project Mc2 LED Purse]
 Power your ESP32 dev board with a Micro-USB cable. Power your LED Panel(s) separately with the [4-pin power cable](https://www.aliexpress.com/item/32832930794.html) (probably included with your panel) hooked up to a *different* 5V power source.
 
 I use this setup for [Furret](https://github.com/rorosaurus/FurretTotem). The panels can pull lots of power, which can sag the voltage output from a USB battery bank. Using a separate battery pack (or a different regulator - sometimes the USB-C output is regulated independently of the USB-A outputs!) ensures that your ESP32 never suffers from low voltage and brownouts/restarts.
+
+Note that if your USB battery bank has two USB-A outputs, those often share the same 5V regulator.
