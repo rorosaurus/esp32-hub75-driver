@@ -37,7 +37,7 @@ Keep in mind you'll need to tweak some variables to match your LED panel's param
 
 Note: some ESP32 dev boards require you to hold the BOOT button for ~3s to connect during sketch upload. If you're using my PCB and you have attached the auto-bootloader capacitor, you don't need to worry about this!
 
-If you're using my PCB, when uploading to the board via Arduino IDE, please use the board: `DOIT ESP32 DEVKIT V1`.
+If you're using my PCB, when uploading to the board via Arduino IDE, please use the board: `DOIT ESP32 DEVKIT V1` and use this programmer: `USBtinyISP`.
 
 * [Project Mc2 LED Purse](https://github.com/rorosaurus/project-mc2-led-purse) - A small repository of a few basic sketches I've constructed to make your introduction as easy as possible! Works with a very cheap display.
   * [FeatureDemo](https://github.com/rorosaurus/project-mc2-led-purse/tree/master/FeatureDemo) - The demo of SmartMatrix features, straight from the SmartMatrix example sketches! I've lightly modified it to remove a couple demos that get VERY bright and might use too much power. However there's still a couple that are pretty blinding - be careful!
