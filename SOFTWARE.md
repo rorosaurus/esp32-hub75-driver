@@ -10,8 +10,12 @@ I would recommend using the following software with this board:
 * https://www.arduino.cc/en/Main/Software - The Arduino IDE, to program everything!
   * https://github.com/espressif/arduino-esp32 - Install board manager support for ESP32
   * https://github.com/me-no-dev/arduino-esp32fs-plugin - This Arduino IDE plugin makes it simple to upload .gifs to your ESP32
+    * Install following the instructions from that repository
+    * You'll need to make sure Serial Monitor is closed before you can upload using this
 * If you'd prefer not to use the Arduino IDE, you should be able to use all the below libraries and sketches in [PlatformIO](https://platformio.org/) on [Visual Studio Code](https://platformio.org/platformio-ide) using [this board configuration](https://docs.platformio.org/en/latest/boards/espressif32/esp32doit-devkit-v1.html).
-* Use your preferred image editor to make your animated .gifs! I used Photoshop, but you could also use GIMP or something!
+
+## Making animated .gifs
+Use your preferred image editor to make your animated .gifs! I used Photoshop, but you could also use GIMP or something! I can also recommend [Aseprite](https://www.aseprite.org/)! In a pinch, you can use websites to convert things to a .gif, but you have much less control over things like compression, color tables, etc.
 
 ## Libraries
 You'll need to install (by downloading, renaming the folder to remove `-master`, and copying to `My Documents/Arduino/libraries`) a few libraries to drive your LED panels:
@@ -31,9 +35,12 @@ The gifs are loaded onto the ESP32's SPIFFS: an integrated filesystem that share
 
 ## Example Sketches
 Keep in mind you'll need to tweak some variables to match your LED panel's parameters:
-* LED panel size - `kMatrixWidth = 32;`, `kMatrixHeight = 16;` replace with your width and height in pixels
-* Scantype - `kPanelType = SMARTMATRIX_HUB75_16ROW_MOD8SCAN;` for 1/8 scan, or `SMARTMATRIX_HUB75_32ROW_MOD16SCAN` for 1/16 scan panels, or `SMARTMATRIX_HUB75_64ROW_MOD32SCAN` for 1/32 scan panels
-* Pinout - `#define GPIOPINOUT ESP32_FORUM_PINOUT` place this somewhere near the top of your sketch!
+* In `neomatrix_config.h`:
+  * LED panel size - `kMatrixWidth = 32;`, `kMatrixHeight = 16;` replace with your width and height in pixels
+  * Scantype - `kPanelType = SMARTMATRIX_HUB75_16ROW_MOD8SCAN;` for 1/8 scan, or `SMARTMATRIX_HUB75_32ROW_MOD16SCAN` for 1/16 scan panels, or `SMARTMATRIX_HUB75_64ROW_MOD32SCAN` for 1/32 scan panels
+  * Pinout - `#define GPIOPINOUT ESP32_FORUM_PINOUT` place this somewhere near the top of your sketch!
+* In `animatedgif_config.h`:
+  * GIF size - `#define gif_width 32`, `#define gif_height 16` replace with your maximum size for GIF decoding
 
 Note: some ESP32 dev boards require you to hold the BOOT button for ~3s to connect during sketch upload. If you're using my PCB and you have attached the auto-bootloader capacitor, you don't need to worry about this!
 
