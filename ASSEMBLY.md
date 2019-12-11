@@ -1,6 +1,8 @@
 # PCB Assembly Instructions
 Please read all these instructions. There is important information in here that might not be immediately obvious. It is possible to solder connectors on the wrong side and end up with an invalid setup - pay close attention!
 
+**If you use a very hot soldering iron, take extreme care not to melt any of your connectors! I personally use my iron at 310°C with no issues.**
+
 ## Step -1: Buy components in advance
 For a list of required and optional components, please see [`HARDWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/HARDWARE.md).
 

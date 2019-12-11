@@ -6,6 +6,8 @@ The `5V` and `GND` from the Micro-USB on the ESP32 board is in parallel with the
 # Mobile Power Notes
 It is possible to power your panel off USB battery packs (although it is unlikely you can safely do anywhere near maximum brightness on anything besides tiny 32x16 panels). If you want to try this, I would recommend making sure your battery pack can do 5V/3A. This is the maximum current typically allowed for USB-A connectors. You might be able to find some USB-C battery packs that can do more.
 
+Note that some battery packs will turn off after a while if they are not supplying a good deal of current. You probably don't need to worry about this, unless you have a very small panel at very low brightnesses.
+
 Your LED panel and my PCB are not equipped to take full advantage of USB-PD or QC3.0 battery packs. If you plug into those, they should only provide the basic 5V/3A.
 
 Start testing with a very low brightness (like 20/255 [some extremely low brightnesses might not display anything at all, FYI]) to ensure you do not pull too many Amps. Be sure to test how many Amps you are pulling (a USB multimeter makes this easy!) and set a reasonable brightness limit in your sketch, so you never exceed 3A! I actually set my maximum brightness to around 2.5A just to be safe.
@@ -56,6 +58,6 @@ This is included as an option for small projects like my [Project Mc2 LED Purse]
 
 Power your ESP32 dev board with a Micro-USB cable. Power your LED Panel(s) separately with the [4-pin power cable](https://www.aliexpress.com/item/32832930794.html) (probably included with your panel) hooked up to a *different* 5V power source.
 
-I use this setup for [Furret](https://github.com/rorosaurus/FurretTotem). The panels can pull lots of power, which can sag the voltage output from a USB battery bank. Using a separate battery pack (or a different regulator - sometimes the USB-C output is regulated independently of the USB-A outputs!) ensures that your ESP32 never suffers from low voltage and brownouts/restarts.
+I use this setup for [Furret](https://github.com/rorosaurus/FurretTotem). The panels can pull lots of power, which can sag the voltage output regulated from a USB battery bank. Using a separate battery pack ensures that your ESP32 never suffers from low voltage and brownouts/restarts.
 
-Note that if your USB battery bank has two USB-A outputs, those often share the same 5V regulator.
+Note that if your USB battery bank has two USB-A outputs, those often share the same 5V regulator. On my battery pack, the USB-C output seems to be regulated independently of the USB-A outputs. So Furret's ESP32 runs off a USB-A port, while the panels are powered off the USB-C port. This keeps the ESP32 from resetting when the panels draw lots of current.
