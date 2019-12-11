@@ -54,7 +54,7 @@ This is included as an option for small projects like my [Project Mc2 LED Purse]
 
 
 ## Power Option 2: Separate power for ESP32 and panels
-**Recommended for the fewest issues!**
+**Recommended in all cases, for the fewest issues!**
 
 Power your ESP32 dev board with a Micro-USB cable. Power your LED Panel(s) separately with the [4-pin power cable](https://www.aliexpress.com/item/32832930794.html) (probably included with your panel) hooked up to a *different* 5V power source.
 

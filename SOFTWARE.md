@@ -9,9 +9,6 @@ The ESP32 cannot directly communicate over USB with your computer to reprogram i
 I would recommend using the following software with this board:
 * https://www.arduino.cc/en/Main/Software - The Arduino IDE, to program everything!
   * https://github.com/espressif/arduino-esp32 - Install board manager support for ESP32
-  * https://github.com/me-no-dev/arduino-esp32fs-plugin - This Arduino IDE plugin makes it simple to upload .gifs to your ESP32
-    * Install following the instructions from that repository
-    * You'll need to make sure Serial Monitor is closed before you can upload using this
 * If you'd prefer not to use the Arduino IDE, you should be able to use all the below libraries and sketches in [PlatformIO](https://platformio.org/) on [Visual Studio Code](https://platformio.org/platformio-ide) using [this board configuration](https://docs.platformio.org/en/latest/boards/espressif32/esp32doit-devkit-v1.html).
 
 ## Making animated .gifs
@@ -30,8 +27,12 @@ If you want to use Wifi, you will need to install additional libraries:
 * https://github.com/me-no-dev/AsyncTCP
 * https://github.com/me-no-dev/ESPAsyncWebServer
 
-## GIFs
+## Uploading .gifs
 The gifs are loaded onto the ESP32's SPIFFS: an integrated filesystem that shares the same flash memory as your program.  You have 4MB shared between the GIFs and your program code. Edit your own gifs using Photoshop or some other editor, then use [this Arduino IDE plugin](https://github.com/me-no-dev/arduino-esp32fs-plugin) to upload .gifs to your ESP32 via the Arduino IDE!
+
+Install following the instructions from that repository page. You'll need to make sure Serial Monitor is closed before you can upload using this, or you'll get an error.
+
+Keep in mind that SPIFFS can't handle long-ish filenames. If a file fails to get bundled and appear on your ESP32, first shorten the filename and try again. Still not working? Is the file too large? Did you resize it properly for the display? Sometimes I forget to do that too. :)
 
 ## Uploading Sketches
 Some ESP32 dev boards require you to hold the BOOT button for ~3s to connect during sketch upload. If you're using my PCB and you have attached the auto-bootloader capacitor, you don't need to worry about this!
