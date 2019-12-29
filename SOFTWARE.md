@@ -73,3 +73,15 @@ New with SmartMatrix Library 3.0, you can chain several panels together to creat
 * Panel Order - By default, the first panel of each row starts on the same side, so you need a long ribbon cable to go from the last panel of the previous row to the first panel of the next row.  `SMARTMATRIX_OPTIONS_C_SHAPE_STACKING` inverts the panel on each row to minimize the length of the cable going from the last panel of each row the first panel of the other row.  
 * Panel Direction - By default the first panel is on the top row.  To stack panels the other way, use `SMARTMATRIX_OPTIONS_BOTTOM_TO_TOP_STACKING`.  
 * To set multiple options, use the bitwise-OR operator e.g. C-shape Bottom-to-top stacking: `const uint8_t kMatrixOptions = (SMARTMATRIX_OPTIONS_C_SHAPE_STACKING | SMARTMATRIX_OPTIONS_BOTTOM_TO_TOP_STACKING);`
+
+## DMA-capable memory
+The number of pixels you can drive is limited primarily by the amount of DMA-capable memory on your ESP32. This affects the size of your display(s) you can drive effectively, their color palette, how long animations can be, etc. There does not appear to be an exact science to this, or I would offer an easy formula for you.
+
+Note: Wifi also uses some amount of DMA-capable memory.
+
+At any time in your program, you can check how much DMA-capable memory is free using this code snippet:
+
+````
+Serial.print("8-bit/DMA Memory Available: ");
+Serial.println(heap_caps_get_free_size(MALLOC_CAP_DMA));
+````
