@@ -50,7 +50,7 @@ This is included as an option for small projects like my [Project Mc2 LED Purse]
 ### Critical Limitations of Power Option 1
 **If you sourced your ESP32 from AliExpress** (white backed PCB), I would not recommend this method unless you are confident your whole project will not exceed `5W`.  I have tested these boards pulling `5W` for 30 minutes with no issues. But in another test, supplying `7W` melted the Micro-USB port's `5V` trace in less than 1 minute.
 
-**If you sourced your ESP32 from Amazon** (black backed PCB), I tested this method with `2A` flowing through to the panels for over 2 hours (`11W` total power over the Micro-USB port). Many components got quite hot, including: the LDO, Serial-to-USB chip, VIN pin, and Micro-USB port. I measured temperatures as high as 90°C. This heat is less than ideal, which is why I recommend using `Power Option 0` or `Power Option 1` instead.
+**If you sourced your ESP32 from Amazon** (black backed PCB), I tested this method with `2A` flowing through to the panels for over 2 hours (`11W` total power over the Micro-USB port). Many components got quite hot, including: the LDO, Serial-to-USB chip, VIN pin, and Micro-USB port. I measured temperatures as high as 90°C. This heat is less than ideal. In a later test with a different batch, I was not able to reach `2A` before having issues, which is why I recommend using `Power Option 0` or `Power Option 2` instead.
 
 
 ## Power Option 2: Separate power for ESP32 and panels

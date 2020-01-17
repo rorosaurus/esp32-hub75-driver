@@ -1,12 +1,12 @@
 # Drive HUB75 LED panels using an ESP32-DEVKIT-V1 and SmartMatrix library
 [![Demo](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/demo.gif)](https://www.youtube.com/watch?v=UengvMiGzF8)
 
-# [Buy this PCB on Tindie! ![I sell on Tindie](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/tindie.png)](https://www.tindie.com/products/18357/)
+# Buy [as a DIY kit](https://www.tindie.com/products/18357/) or [pre-assembled](https://www.tindie.com/products/19114/) on Tindie! [![I sell on Tindie](https://github.com/rorosaurus/esp32-hub75-driver/raw/master/images/tindie.png)](https://www.tindie.com/stores/rorosaurus/)
 
 ## Features
 
 * Compatible with [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) and [FastLED](https://github.com/FastLED/FastLED) libraries!
-  * Play animated .gifs on your LED panel using [Marc Merlin's AnimatedGIFs sketch](https://github.com/marcmerlin/AnimatedGIFs)!
+  * Play animated .gifs (from SPIFFS) on your LED panel using [Marc Merlin's AnimatedGIFs sketch](https://github.com/marcmerlin/AnimatedGIFs)!
   * Animate scrolling text (and more!) using [SmartMatrix's FeatureDemo](https://github.com/pixelmatix/SmartMatrix/tree/teensylc/examples/FeatureDemo)!
 * ESP32 provides 2.4GHz Wifi/Bluetooth capability, and is Arduino compatible!
 * The PCB connects all 16 pins needed to drive HUB75 panels using [`ESP32_FORUM_PINOUT`](https://github.com/pixelmatix/SmartMatrix/blob/teensylc/src/MatrixHardware_ESP32_V0.h#L37) from SmartMatrix library.
@@ -32,8 +32,9 @@
   * 128x64px (8,192px total) is technically possible, but you'll be limited to a small .gif color pallete and < 20 frames of animation, otherwise you will experience lag/stutter artifacts in the output visuals. To get Wifi working with this size of panel, I [hacked SmartMatrix to remove the double buffer](https://github.com/rorosaurus/SmartMatrix/commit/c46fe8d7be686caaaa3b7198bc4b7b24c6114df8). This results in some screen tears, so I don't recommend this for everyone.
 
 ## Example Projects
-* [FurretTotem](https://ravefurret.com/): HE WALK! This cute little guy just keeps on walking.
-* [Project Mc2 LED Purse](https://github.com/rorosaurus/project-mc2-led-purse): Cheap children's toy you can harvest a good beginner panel from!
+* [FurretTotem](https://ravefurret.com/): HE WALK! This cute little guy just keeps on walking. Large (128x64px) LED panel, battery powered, Wifi controlled.
+* [Project Mc2 LED Purse](https://github.com/rorosaurus/project-mc2-led-purse): Cheap children's toy you can harvest a good beginner panel from! I have several example sketches here for a variety of basic introductory projects!
+* For more example projects and code, check out [`SOFTWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/SOFTWARE.md)!
 
 ## Assembly Instructions
 Some assembly required! (Soldering ~46 pins.) Full assembly instructions and more detailed information can be found here: [`ASSEMBLY.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/ASSEMBLY.md)
