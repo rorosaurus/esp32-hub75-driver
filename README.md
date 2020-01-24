@@ -45,7 +45,7 @@ For a list of required and optional components, please see [`HARDWARE.md`](https
 ## Software
 For links to software I recommend using with this board, please see [`SOFTWARE.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/SOFTWARE.md)
 
-Please note: my shield works with [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) library, not [PxMatrix](https://github.com/2dom/PxMatrix).
+Please note: my shield works with [SmartMatrix](https://github.com/pixelmatix/SmartMatrix/tree/teensylc) library, not [PxMatrix](https://github.com/2dom/PxMatrix). Please check the SmartMatrix README to see what is not yet fully working in the branch that supports ESP32. This branch has so been inactive for some time, so I would not expect any future developments. However, I haven't personally run into any blocking issues yet!
 
 ## Powering your project
 To find out the best way to power your ESP32 and LED panels, please head over to my power document: [`POWER.md`](https://github.com/rorosaurus/esp32-hub75-driver/blob/master/POWER.md)!
