@@ -19,6 +19,7 @@ You'll need to install (by downloading, renaming the folder to remove `-master`,
 * https://github.com/pixelmatix/SmartMatrix/tree/teensylc
   * Please note: This is a specific branch of SmartMatrix. ESP32 support *only exists* in this branch.
 * https://github.com/adafruit/Adafruit-GFX-Library
+  * I'm using version 1.5.5 of this library. Someone has reported an issue using the latest (1.10.1) version, so maybe avoid that.
 * https://github.com/marcmerlin/Framebuffer_GFX
 * https://github.com/FastLED/FastLED
 * https://github.com/marcmerlin/SmartMatrix_GFX
